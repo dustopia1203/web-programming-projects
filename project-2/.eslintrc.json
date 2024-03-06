@@ -9,7 +9,12 @@
   "rules": {
     // CS 142 rules
     "no-console": 0,
-    "no-empty": ["error", { "allowEmptyCatch": true }],
+    "no-empty": [
+      "error",
+      {
+        "allowEmptyCatch": true
+      }
+    ],
     "no-restricted-syntax": [
       "error",
       {
@@ -21,14 +26,16 @@
       "error",
       {
         "vars": "all",
-        "varsIgnorePattern": "cs142MakeMultiFilter|Cs142TemplateProcessor", // allow these two "unused" variables
+        "varsIgnorePattern": "makeMultiFilter|TemplateProcessor", // allow these two "unused" variables
         "args": "after-used",
         "ignoreRestSiblings": true
       }
     ],
     "no-var": 0, // var is essential for Problem 3
-    "strict": ["error", "safe"], // Require 'use strict'
-
+    "strict": [
+      "error",
+      "safe"
+    ], // Require 'use strict'
     // Overly strict style rules
     "arrow-parens": 0,
     "brace-style": 0,
@@ -40,7 +47,6 @@
     "no-plusplus": 0,
     "quotes": 0,
     "vars-on-top": 0,
-
     // Spacing rules
     "block-spacing": 0,
     "comma-spacing": 0,
@@ -68,7 +74,6 @@
     "space-unary-ops": 0,
     "spaced-comment": 0,
     "unicode-bom": 0,
-
     // ES6 shorthands
     "object-shorthand": 0,
     "prefer-arrow-callback": 0,
